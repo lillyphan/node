@@ -1,5 +1,3 @@
-import java.util.Objects;
-
 public class Node<E> {
     private Node<E> parent;
     private Node<E> child;

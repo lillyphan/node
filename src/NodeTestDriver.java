@@ -1,11 +1,14 @@
 public class NodeTestDriver {
     public static void main(String[] args) {
-        //testing constructors
+        //testing constructors and generic types
         Node<Integer> parent = new Node<>();
         Node<Integer> child = new Node<>(5);
         Node<Integer> middle = new Node<>(10, child, parent);
+        Node<Object> wow = new Node<>();
 
         //testing mutators, accessors, and toString
+        System.out.println("null -- " + parent.getParent());
+        System.out.println("null -- " + child.getChild());
         parent.setData(15);
         System.out.println("Node: 15 -- " + middle.getParent());
         middle.setParent(child);
